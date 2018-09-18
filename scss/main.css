@@ -4,7 +4,7 @@ by 20% else darken it by 10% */
 .dark-btn {
   width: 100px;
   height: 50px;
-  font-size: pxToRem(20px);
+  font-size: 1.25rem;
   border-radius: 5px;
   text-align: center;
   background-color: black;
@@ -13,11 +13,17 @@ by 20% else darken it by 10% */
   color: white; }
   .dark-btn:hover {
     background-color: black; }
+  @media (max-width: 767px) {
+    .dark-btn {
+      background-color: #7f83c4; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .dark-btn {
+      background-color: #7fc49b; } }
 
 .error-btn {
   width: 100px;
   height: 50px;
-  font-size: pxToRem(20px);
+  font-size: 1.25rem;
   border-radius: 5px;
   text-align: center;
   background-color: red;
@@ -30,7 +36,7 @@ by 20% else darken it by 10% */
 .success-btn {
   width: 200px;
   height: 100px;
-  font-size: pxToRem(40px);
+  font-size: 2.5rem;
   border-radius: 5px;
   text-align: center;
   background-color: #bada55;
@@ -43,7 +49,7 @@ by 20% else darken it by 10% */
 .dark-btn-lg {
   width: 200px;
   height: 100px;
-  font-size: pxToRem(40px);
+  font-size: 2.5rem;
   border-radius: 5px;
   text-align: center;
   background-color: black;
@@ -56,7 +62,7 @@ by 20% else darken it by 10% */
 .error-btn-lg {
   width: 200px;
   height: 100px;
-  font-size: pxToRem(40px);
+  font-size: 2.5rem;
   border-radius: 5px;
   text-align: center;
   background-color: red;
@@ -67,13 +73,13 @@ by 20% else darken it by 10% */
     background-color: #cc0000; }
 
 .success-btn-lg {
-  width: 400px;
-  height: 200px;
-  font-size: pxToRem(80px);
+  width: 200px;
+  height: 100px;
+  font-size: 2.5rem;
   border-radius: 5px;
   text-align: center;
   background-color: #bada55;
-  padding-top: 60px;
+  padding-top: 30px;
   box-sizing: border-box;
   color: gray; }
   .success-btn-lg:hover {

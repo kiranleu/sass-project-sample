@@ -1,5 +1,12 @@
 .dark-btn {
-    @include button(black, 100px);
+    @include button (black, 100px);
+
+    @include mobile {
+        background-color: #7f83c4;
+    }
+    @include tablet {
+        background-color: #7fc49b;
+    }
 }
 
 .error-btn {
@@ -19,5 +26,5 @@
 }
 
 .success-btn-lg {
-    @include button(#bada55, 400px);
+    @include button(#bada55, 200px);
 }
